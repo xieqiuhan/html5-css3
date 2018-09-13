@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper{
+            position:relative;
+            height:210px;
+            width:210PX;
+            margin:100px auto;
+            border:1px solid palevioletred;
+            border-radius: 50%;
+        }
+    .miaozhen {
+        position:absolute;
+        width: 3px;
+        height: 100px;
+        margin-left:105px;
+        margin-top:5px;
+        background-color: #000;
+        transform-origin: center bottom;    /* 旋转的中心点是底部 */
+        animation: myClock1 60s steps(60) infinite;
+    }
+    .fenzhen {
+        position:absolute;
+        width: 3px;
+        height: 60px;
+        margin-left:105px;
+        margin-top:45px;
+        background-color:rebeccapurple;
+        transform-origin: center bottom;    /* 旋转的中心点是底部 */
+        animation: myClock2 3600s  infinite;
+    }
+    @keyframes myClock2 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes myClock1 {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">  
+      <div class='fenzhen' ></div>  
+      <div class='miaozhen'></div>  
+    </div>
+<div></div>
+</body>
+</html>
